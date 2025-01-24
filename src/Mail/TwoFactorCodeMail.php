@@ -37,7 +37,7 @@ class TwoFactorCodeMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'filament-2fa::' . config('filament-2fa.email_view','emails.two-factor-code'),
+            markdown: 'filament-2fa::emails.two-factor-code',
         );
     }
 
