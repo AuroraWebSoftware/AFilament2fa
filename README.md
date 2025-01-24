@@ -1,10 +1,5 @@
 # Filament 2FA plugin
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/aurorawebsoftware/filament-2fa.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/filament-2fa)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/aurorawebsoftware/filament-2fa/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/vormkracht10/filament-2fa/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![PHPStan](https://img.shields.io/github/actions/workflow/status/aurorawebsoftware/filament-2fa/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/vormkracht10/filament-2fa/actions/workflows/phpstan.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/aurorawebsoftware/filament-2fa.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/filament-2fa)
-
 Hi! We are a web development agency from Nijmegen in the Netherlands and we use Laravel for everything: advanced websites with a lot of bells and whitles and large web applications.
 
 ## About the package
@@ -135,7 +130,7 @@ In case you're using Laravel 11, you need to register the event listener in your
 ```php
 use Laravel\Fortify\Events\TwoFactorAuthenticationChallenged;
 use Laravel\Fortify\Events\TwoFactorAuthenticationEnabled;
-use Vormkracht10\TwoFactorAuth\Listeners\SendTwoFactorCodeListener;
+use AuroraWebSoftware\TwoFactorAuth\Listeners\SendTwoFactorCodeListener;
 
 // ...
 
@@ -155,7 +150,7 @@ In case you're not using Laravel 11 yet, you will probably need to manually regi
 ```php
 use Laravel\Fortify\Events\TwoFactorAuthenticationEnabled;
 use Laravel\Fortify\Events\TwoFactorAuthenticationChallenged;
-use Vormkracht10\TwoFactorAuth\Listeners\SendTwoFactorCodeListener;
+use AuroraWebSoftware\TwoFactorAuth\Listeners\SendTwoFactorCodeListener;
 
 // ...
 
@@ -208,7 +203,7 @@ Like the example in the [Laravel documentation](https://laravel.com/docs/11.x/no
 
 namespace App\Notifications;
 
-use Vormkracht10\TwoFactorAuth\Notifications\SendOTP as NotificationsSendOTP;
+use AuroraWebSoftware\TwoFactorAuth\Notifications\SendOTP as NotificationsSendOTP;
 use Illuminate\Notifications\Messages\VonageMessage;
 
 class SendOTP extends NotificationsSendOTP
@@ -265,7 +260,7 @@ Make sure you extend the original classes from the package.
 If you're using Filament in a multi-tenant setup, you need to set the `tenant` option to `true` in the `config/filament-2fa.php` file. You also need to set the `userMenuItems` in your panel config. Take a look at the example below:
 
 ```php
-use Vormkracht10\TwoFactorAuth\Pages\TwoFactor;
+use AuroraWebSoftware\TwoFactorAuth\Pages\TwoFactor;
 
 // ...
 
