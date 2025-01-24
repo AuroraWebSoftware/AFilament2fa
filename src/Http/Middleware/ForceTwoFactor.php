@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Http\Middleware;
+namespace AuroraWebSoftware\TwoFactorAuth\Http\Middleware;
 
 use Closure;
 use Filament\Facades\Filament;

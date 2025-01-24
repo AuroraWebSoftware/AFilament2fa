@@ -1,11 +1,9 @@
 # Filament 2FA plugin
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/vormkracht10/filament-2fa.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/filament-2fa)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/vormkracht10/filament-2fa/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/vormkracht10/filament-2fa/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![PHPStan](https://img.shields.io/github/actions/workflow/status/vormkracht10/filament-2fa/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/vormkracht10/filament-2fa/actions/workflows/phpstan.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/vormkracht10/filament-2fa.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/filament-2fa)
-
-## Nice to meet you, we're [Vormkracht10](https://vormkracht10.nl)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/aurorawebsoftware/filament-2fa.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/filament-2fa)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/aurorawebsoftware/filament-2fa/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/vormkracht10/filament-2fa/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![PHPStan](https://img.shields.io/github/actions/workflow/status/aurorawebsoftware/filament-2fa/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/vormkracht10/filament-2fa/actions/workflows/phpstan.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/aurorawebsoftware/filament-2fa.svg?style=flat-square)](https://packagist.org/packages/vormkracht10/filament-2fa)
 
 Hi! We are a web development agency from Nijmegen in the Netherlands and we use Laravel for everything: advanced websites with a lot of bells and whitles and large web applications.
 
@@ -21,30 +19,30 @@ This package adds Two Factor Authentication for your Laravel Filament app, using
 
 ### Enable Two Factor Authentication (2FA)
 
-![Enable Two Factor Authentication (2FA)](https://raw.githubusercontent.com/vormkracht10/filament-2fa/main/docs/two-factor-page.png)
+![Enable Two Factor Authentication (2FA)](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/two-factor-page.png)
 
 ### Using authenticator app as two factor method
 
-![Authenticator app](https://raw.githubusercontent.com/vormkracht10/filament-2fa/main/docs/authenticator-app.png)
+![Authenticator app](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/authenticator-app.png)
 
 ### Using email or SMS as two factor method
 
-![Email or SMS](https://raw.githubusercontent.com/vormkracht10/filament-2fa/main/docs/email-or-sms.png)
+![Email or SMS](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/email-or-sms.png)
 
 ### Recovery codes
 
-![Recovery codes](https://raw.githubusercontent.com/vormkracht10/filament-2fa/main/docs/recovery-codes.png)
+![Recovery codes](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/recovery-codes.png)
 
 ### Two Factor authentication challenge
 
-![Two Factor challenge](https://raw.githubusercontent.com/vormkracht10/filament-2fa/main/docs/code-challenge.png)
+![Two Factor challenge](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/code-challenge.png)
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require vormkracht10/filament-2fa
+composer require aurorawebsoftware/filament-2fa
 ```
 
 If you don't have [Laravel Fortify](https://laravel.com/docs/11.x/fortify) installed yet, you can install it by running the following commands:
@@ -73,7 +71,7 @@ php artisan filament-2fa:install
 Then add the plugin to your `PanelProvider`:
 
 ```php
-use Vormkracht10\TwoFactorAuth\TwoFactorAuthPlugin;
+use AuroraWebSoftware\TwoFactorAuth\TwoFactorAuthPlugin;
 
 // ...
 
@@ -93,7 +91,7 @@ class User extends Authenticatable implements FilamentUser
 Also define the `two_factor_type` cast on your user model:
 
 ```php
-use Vormkracht10\TwoFactorAuth\Enums\TwoFactorType;
+use AuroraWebSoftware\TwoFactorAuth\Enums\TwoFactorType;
 
 // ...
 
@@ -120,7 +118,7 @@ export default defineConfig({
                 // ...
             ],
             content: [
-                "./vendor/vormkracht10/filament-2fa/resources/**.*.blade.php",
+                "./vendor/aurorawebsoftware/filament-2fa/resources/**.*.blade.php",
             ],
             refresh: true,
         }),
@@ -340,7 +338,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
--   [Baspa](https://github.com/vormkracht10)
+-   [Baspa](https://github.com/aurorawebsoftware)
 -   [All Contributors](../../contributors)
 
 ## License

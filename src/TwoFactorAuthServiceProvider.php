@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth;
+namespace AuroraWebSoftware\TwoFactorAuth;
 
 use Filament\Facades\Filament;
 use Filament\Support\Assets\AlpineComponent;
@@ -29,12 +29,12 @@ use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Vormkracht10\TwoFactorAuth\Commands\TwoFactorAuthCommand;
-use Vormkracht10\TwoFactorAuth\Enums\TwoFactorType;
-use Vormkracht10\TwoFactorAuth\Http\Responses\LoginResponse;
-use Vormkracht10\TwoFactorAuth\Http\Responses\TwoFactorChallengeViewResponse;
-use Vormkracht10\TwoFactorAuth\Http\Responses\TwoFactorLoginResponse;
-use Vormkracht10\TwoFactorAuth\Testing\TestsTwoFactorAuth;
+use AuroraWebSoftware\TwoFactorAuth\Commands\TwoFactorAuthCommand;
+use AuroraWebSoftware\TwoFactorAuth\Enums\TwoFactorType;
+use AuroraWebSoftware\TwoFactorAuth\Http\Responses\LoginResponse;
+use AuroraWebSoftware\TwoFactorAuth\Http\Responses\TwoFactorChallengeViewResponse;
+use AuroraWebSoftware\TwoFactorAuth\Http\Responses\TwoFactorLoginResponse;
+use AuroraWebSoftware\TwoFactorAuth\Testing\TestsTwoFactorAuth;
 
 class TwoFactorAuthServiceProvider extends PackageServiceProvider
 {
@@ -95,7 +95,7 @@ class TwoFactorAuthServiceProvider extends PackageServiceProvider
                             }
                         }
                     })
-                    ->askToStarRepoOnGitHub('vormkracht10/filament-2fa');
+                    ->askToStarRepoOnGitHub('aurorawebsoftware/filament-2fa');
             });
 
         $configFileName = $package->shortName();
@@ -272,7 +272,7 @@ class TwoFactorAuthServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): string
     {
-        return 'vormkracht10/filament-2fa';
+        return 'aurorawebsoftware/filament-2fa';
     }
 
     /**

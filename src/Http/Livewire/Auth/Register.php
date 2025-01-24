@@ -1,9 +1,9 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Http\Livewire\Auth;
+namespace AuroraWebSoftware\TwoFactorAuth\Http\Livewire\Auth;
 
 use Filament\Pages\Auth\Register as BaseRegister;
-use Vormkracht10\TwoFactorAuth\Http\Responses\RegistrationResponse;
+use AuroraWebSoftware\TwoFactorAuth\Http\Responses\RegistrationResponse;
 
 class Register extends BaseRegister
 {

@@ -1,5 +1,5 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth;
+namespace AuroraWebSoftware\TwoFactorAuth;
 
 class TwoFactorAuth {}

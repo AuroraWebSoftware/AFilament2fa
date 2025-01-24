@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Database\Factories;
+namespace AuroraWebSoftware\TwoFactorAuth\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

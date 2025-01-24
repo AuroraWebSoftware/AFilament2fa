@@ -1,9 +1,9 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Enums;
+namespace AuroraWebSoftware\TwoFactorAuth\Enums;
 
 use Filament\Support\Contracts\HasLabel;
-use Vormkracht10\TwoFactorAuth\Traits\EnumArraySerializableTrait;
+use AuroraWebSoftware\TwoFactorAuth\Traits\EnumArraySerializableTrait;
 
 enum TwoFactorType: string implements HasLabel
 {

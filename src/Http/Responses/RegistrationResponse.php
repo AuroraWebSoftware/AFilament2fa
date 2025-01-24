@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Http\Responses;
+namespace AuroraWebSoftware\TwoFactorAuth\Http\Responses;
 
 use Filament\Http\Responses\Auth\Contracts\RegistrationResponse as Responsable;
 use Illuminate\Http\RedirectResponse;

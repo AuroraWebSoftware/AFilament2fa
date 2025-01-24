@@ -1,13 +1,13 @@
 <?php
 
-use Vormkracht10\TwoFactorAuth\Enums\TwoFactorType;
-use Vormkracht10\TwoFactorAuth\Http\Livewire\Auth\Login;
-use Vormkracht10\TwoFactorAuth\Http\Livewire\Auth\LoginTwoFactor;
-use Vormkracht10\TwoFactorAuth\Http\Livewire\Auth\PasswordConfirmation;
-use Vormkracht10\TwoFactorAuth\Http\Livewire\Auth\PasswordReset;
-use Vormkracht10\TwoFactorAuth\Http\Livewire\Auth\Register;
-use Vormkracht10\TwoFactorAuth\Http\Livewire\Auth\RequestPasswordReset;
-use Vormkracht10\TwoFactorAuth\Pages\TwoFactor;
+use AuroraWebSoftware\TwoFactorAuth\Enums\TwoFactorType;
+use AuroraWebSoftware\TwoFactorAuth\Http\Livewire\Auth\Login;
+use AuroraWebSoftware\TwoFactorAuth\Http\Livewire\Auth\LoginTwoFactor;
+use AuroraWebSoftware\TwoFactorAuth\Http\Livewire\Auth\PasswordConfirmation;
+use AuroraWebSoftware\TwoFactorAuth\Http\Livewire\Auth\PasswordReset;
+use AuroraWebSoftware\TwoFactorAuth\Http\Livewire\Auth\Register;
+use AuroraWebSoftware\TwoFactorAuth\Http\Livewire\Auth\RequestPasswordReset;
+use AuroraWebSoftware\TwoFactorAuth\Pages\TwoFactor;
 
 return [
 
@@ -59,7 +59,7 @@ return [
     |
     | To use an SMS service, you need to install the corresponding package.
     | You then have to create a App\Notifications\SendOTP class that extends
-    | the Vormkracht10\TwoFactorAuth\Notifications\SendOTP class. After that,
+    | the AuroraWebSoftware\TwoFactorAuth\Notifications\SendOTP class. After that,
     | you can set the class alias in the sms_service key.
     |
     */

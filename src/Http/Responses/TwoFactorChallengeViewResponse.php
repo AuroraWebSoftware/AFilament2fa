@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Http\Responses;
+namespace AuroraWebSoftware\TwoFactorAuth\Http\Responses;
 
 use Filament\Facades\Filament;
 use Laravel\Fortify\Contracts\TwoFactorChallengeViewResponse as LoginResponseContract;

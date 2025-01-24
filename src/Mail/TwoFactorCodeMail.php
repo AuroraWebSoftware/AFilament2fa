@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Mail;
+namespace AuroraWebSoftware\TwoFactorAuth\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

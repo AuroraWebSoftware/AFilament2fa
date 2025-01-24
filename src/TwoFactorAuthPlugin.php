@@ -1,14 +1,14 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth;
+namespace AuroraWebSoftware\TwoFactorAuth;
 
 use Closure;
 use Filament\Contracts\Plugin;
 use Filament\Navigation\MenuItem;
 use Filament\Panel;
 use Filament\Support\Concerns\EvaluatesClosures;
-use Vormkracht10\TwoFactorAuth\Http\Middleware\ForceTwoFactor;
-use Vormkracht10\TwoFactorAuth\Pages\TwoFactor;
+use AuroraWebSoftware\TwoFactorAuth\Http\Middleware\ForceTwoFactor;
+use AuroraWebSoftware\TwoFactorAuth\Pages\TwoFactor;
 
 class TwoFactorAuthPlugin implements Plugin
 {

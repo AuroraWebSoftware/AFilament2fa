@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Tests\PHPStan;
+namespace AuroraWebSoftware\TwoFactorAuth\Tests\PHPStan;
 
 use PHPStan\Reflection\ClassReflection;
 use PHPStan\Reflection\PropertyReflection;

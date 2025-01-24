@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Testing;
+namespace AuroraWebSoftware\TwoFactorAuth\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 

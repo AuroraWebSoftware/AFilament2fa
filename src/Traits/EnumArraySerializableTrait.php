@@ -1,6 +1,6 @@
 <?php
 
-namespace Vormkracht10\TwoFactorAuth\Traits;
+namespace AuroraWebSoftware\TwoFactorAuth\Traits;
 
 trait EnumArraySerializableTrait
 {

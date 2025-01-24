@@ -5,11 +5,7 @@
         "laravel",
         "filament-2fa"
     ],
-    "homepage": "https://github.com/vormkracht10/filament-2fa",
-    "support": {
-        "issues": "https://github.com/vormkracht10/filament-2fa/issues",
-        "source": "https://github.com/vormkracht10/filament-2fa"
-    },
+    "homepage": "https://github.com/aurorawebsoftware/filament-2fa",
     "license": "MIT",
     "authors": [
         {
@@ -38,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Vormkracht10\\TwoFactorAuth\\": "src/",
-            "Vormkracht10\\TwoFactorAuth\\Database\\Factories\\": "database/factories/"
+            "AuroraWebSoftware\\TwoFactorAuth\\": "src/",
+            "AuroraWebSoftware\\TwoFactorAuth\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vormkracht10\\TwoFactorAuth\\Tests\\": "tests/"
+            "AuroraWebSoftware\\TwoFactorAuth\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -64,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Vormkracht10\\TwoFactorAuth\\TwoFactorAuthServiceProvider"
+                "AuroraWebSoftware\\TwoFactorAuth\\TwoFactorAuthServiceProvider"
             ],
             "aliases": {
-                "TwoFactorAuth": "Vormkracht10\\TwoFactorAuth\\Facades\\TwoFactorAuth"
+                "TwoFactorAuth": "AuroraWebSoftware\\TwoFactorAuth\\Facades\\TwoFactorAuth"
             }
         }
     },
