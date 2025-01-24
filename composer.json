@@ -1,8 +1,7 @@
 {
-    "name": "vormkracht10/filament-2fa",
+    "name": "aurorawebsoftware/filament-2fa",
     "description": "This package helps you integrate Laravel Fortify with ease in your Filament apps. ",
     "keywords": [
-        "vormkracht10",
         "laravel",
         "filament-2fa"
     ],
@@ -14,8 +13,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Baspa",
-            "email": "hello@baspa.dev",
+            "name": "aurorawebsoftware",
             "role": "Developer"
         }
     ],
