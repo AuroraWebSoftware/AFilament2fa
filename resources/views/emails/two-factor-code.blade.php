@@ -1,17 +1,16 @@
 <x-mail::message>
-{{ __('Hello') }},
+    {{ __('Merhaba') }},
 
-{{ __('You recently requested to log in to your account. To complete the login, please use the following two-factor authentication (2FA) code:') }}
+    {{ __('Hesabınıza giriş yapmak için yakın zamanda bir istekte bulundunuz. Girişi tamamlamak için lütfen aşağıdaki iki faktörlü kimlik doğrulama (2FA) kodunu kullanın:') }}
 
-<div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; text-align: center; max-width: 200px; font-family: monospace; margin: 25px auto 25px;">
+    <div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; text-align: center; max-width: 200px; font-family: monospace; margin: 25px auto 25px;">
     <span style="font-size: 1.5em; color: #333;">
         {{ $code }}
     </span>
-</div>
+    </div>
 
+    {{ __('Eğer giriş yapmaya çalışmadıysanız, hesabınızı korumak için lütfen hemen şifrenizi değiştirin.') }}
 
-{{ __('If you didn\'t try to log in, please change your password immediately to protect your account.') }}
-
-{{ __('Kind regards') }},<br>
-{{ config('app.name') }}
+    {{ __('Saygılarımızla') }},<br>
+    {{ config('filament-2fa.emails_app_name') }}
 </x-mail::message>

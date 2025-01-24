@@ -16,16 +16,19 @@ class ForceTwoFactor
             return $next($request);
         }
 
-        if ($user && ! $user->two_factor_confirmed_at) {
-            $currentPanel = Filament::getCurrentPanel();
+        if ($user && $user->is_force_two_factor) {
+            if ($user->two_factor_confirmed_at == null) {
+                $currentPanel = Filament::getCurrentPanel();
 
-            if ($currentPanel) {
-                return redirect()->to(route('filament.' . $currentPanel->getId() . '.pages.two-factor', [
-                    'tenant' => Filament::getTenant(),
-                ]))->with('two_factor_redirect_message', __('Your administrator requires you to enable two-factor authentication.'));
+                if ($currentPanel) {
+                    return redirect()->to(route('filament.' . $currentPanel->getId() . '.pages.two-factor', [
+                        'tenant' => Filament::getTenant(),
+                    ]))->with('two_factor_redirect_message', __('Your administrator requires you to enable two-factor authentication.'));
+                }
             }
         }
 
         return $next($request);
     }
 }
+

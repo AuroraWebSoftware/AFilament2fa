@@ -4,30 +4,30 @@
         <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
             <div class="pr-4 sm:px-0">
                 <h2 class="text-base font-semibold leading-7">
-                    {{ __('Secure your account') }}
+                    {{ __('Hesabınızı Güvenceye Alın') }}
                 </h2>
 
                 @if (!$showingRecoveryCodes && $user->two_factor_confirmed_at)
                     <p class="mt-1 text-sm leading-6 mb-4">
-                        {{ __('Your account has been secured with two factor authentication') }}.
+                        {{ __('Hesabınız iki faktörlü kimlik doğrulama ile güvence altına alınmıştır.') }}
                     </p>
                 @else
                     <p class="mt-1 text-sm leading-6 mb-4">
-                        {{ __('Add additional security to your account using two factor authentication') }}.
+                        {{ __('İki faktörlü kimlik doğrulama kullanarak hesabınıza ek güvenlik katmanı ekleyin.') }}
                     </p>
                 @endif
             </div>
 
             <x-filament::section class="md:col-span-2">
                 <x-slot name="description">
-                    {{ __('You can disable two factor authentication at any time by using the button below') }}.
+                    {{ __('Aşağıdaki butonu kullanarak iki faktörlü kimlik doğrulamayı istediğiniz zaman devre dışı bırakabilirsiniz.') }}
                 </x-slot>
 
                 @if (!$showingRecoveryCodes && $user->two_factor_confirmed_at)
                     {{ $this->disableAction() }}
                 @else
                     <x-slot name="description">
-                        {{ __('You have :amount options to confirm your identity, please choose one of the options below to continue', ['amount' => $this->twoFactorOptionsCount]) }}.
+                        {{ __('Kimliğinizi doğrulamak için :amount seçeneğiniz var, devam etmek için lütfen aşağıdaki seçeneklerden birini seçin.', ['amount' => $this->twoFactorOptionsCount]) }}
                     </x-slot>
                 @endif
 
@@ -46,11 +46,11 @@
                                         <div>
                                             @unless ($showingQrCode)
                                                 <div class="font-bold">
-                                                    {!! __('Two-Factor Authentication enabled') !!}
+                                                    {!! __('İki Faktörlü Kimlik Doğrulama etkinleştirildi') !!}
                                                 </div>
                                             @else
                                                 <div class="font-bold">
-                                                    {!! __('Or scan the QR code with your authenticator app') !!}.
+                                                    {!! __('Veya QR kodunu doğrulayıcı uygulamanızla tarayın') !!}.
                                                 </div>
                                                 <div class="flex items-center justify-center mt-2">
                                                     <div class="border-4 border-white">
@@ -59,7 +59,7 @@
                                                 </div>
                                                 <br />
                                                 <p class="text-sm">
-                                                    {!! __('The secret key to setup the authenticator app is') !!}: <br />
+                                                    {!! __('Doğrulayıcı uygulamasını ayarlamak için gizli anahtar') !!}: <br />
                                                     <span
                                                         class="font-bold mt-4">{{ decrypt($user->two_factor_secret) }}</span>
                                                 </p>
@@ -71,7 +71,7 @@
                                 @if ($showingRecoveryCodes)
                                     <div class="text-center text-sm">
                                         {!! __(
-                                            'Save these recovery codes in a secure place as they can be used to recover access to your account if you lose your device',
+                                            'Bu kurtarma kodlarını güvenli bir yerde saklayın, çünkü cihazınızı kaybettiğinizde hesabınıza erişimi kurtarmak için kullanılabilirler',
                                         ) !!}.
                                         <div class="flex items-center justify-center">
                                             <div class="mt-2 text-left text-sm">

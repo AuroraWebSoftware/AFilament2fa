@@ -12,6 +12,9 @@ return new class extends Migration
         if (!Schema::hasColumn('users', 'two_factor_type') && Schema::hasColumn('users', 'two_factor_recovery_codes')) {
             Schema::table('users', function (Blueprint $table) {
                 $table->enum('two_factor_type', TwoFactorType::names())->nullable()->after('two_factor_recovery_codes');
+                if(!Schema::hasColumn('users', 'is_force_two_factor')){
+                     $table->boolean('is_force_two_factor')->default(false)->nullable()->after('two_factor_type');
+                }
             });
         }
     }

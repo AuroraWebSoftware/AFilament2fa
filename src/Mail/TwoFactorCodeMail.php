@@ -27,7 +27,7 @@ class TwoFactorCodeMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: __('Your security code for :app', ['app' => config('app.name')]),
+            subject: __('Your security code for :app', ['app' => config('filament-2fa.email_app_name', config('app.name', 'Hadi Öde'))]),
         );
     }
 
@@ -37,7 +37,7 @@ class TwoFactorCodeMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'filament-2fa::emails.two-factor-code',
+            markdown: 'filament-2fa::' . config('filament-2fa.email_view','emails.two-factor-code'),
         );
     }
 

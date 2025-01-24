@@ -28,6 +28,9 @@ return [
         // TwoFactorType::phone,
     ],
 
+    'email_view' => 'emails.two-factor-code',
+    'email_app_name' => config('app.name', 'Hadi Öde'),
+
     'enabled_features' => [
         /*
         |--------------------------------------------------------------------------

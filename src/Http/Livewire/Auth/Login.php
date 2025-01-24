@@ -103,8 +103,10 @@ class Login extends BaseLogin
 
         $request = request()->merge($data);
 
-        if (! $this->validateCredentials($this->getCredentialsFromFormData($data))) {
-            $this->throwFailureValidationException();
+        if (!$this->validateCredentials($this->getCredentialsFromFormData($data))) {
+            if (!Filament::auth()->attempt($this->getCredentialsFromFormData($data), $data['remember'] ?? false)) {
+                $this->throwFailureValidationException();
+            }
         }
 
         return $this->loginPipeline($request)->then(function (Request $request) use ($data) {

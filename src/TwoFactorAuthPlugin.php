@@ -33,7 +33,7 @@ class TwoFactorAuthPlugin implements Plugin
             ]);
 
         if ($this->isForced()) {
-            $middlewareMethod = config('filament-2fa.enabled_features.multi_tenancy') ? 'tenantMiddleware' : 'middleware';
+            $middlewareMethod = config('filament-two-factor-auth.enabled_features.multi_tenancy') ? 'tenantMiddleware' : 'authMiddleware';
             $panel->$middlewareMethod([
                 ForceTwoFactor::class,
             ]);
