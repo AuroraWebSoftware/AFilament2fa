@@ -12,26 +12,6 @@ This package adds Two Factor Authentication for your Laravel Filament app, using
 
 ## Features and screenshots
 
-### Enable Two Factor Authentication (2FA)
-
-![Enable Two Factor Authentication (2FA)](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/two-factor-page.png)
-
-### Using authenticator app as two factor method
-
-![Authenticator app](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/authenticator-app.png)
-
-### Using email or SMS as two factor method
-
-![Email or SMS](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/email-or-sms.png)
-
-### Recovery codes
-
-![Recovery codes](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/recovery-codes.png)
-
-### Two Factor authentication challenge
-
-![Two Factor challenge](https://raw.githubusercontent.com/aurorawebsoftware/filament-2fa/main/docs/code-challenge.png)
-
 ## Installation
 
 You can install the package via composer:
