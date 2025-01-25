@@ -48,7 +48,7 @@ class SendOTP extends Notification implements ShouldQueue
         }
 
         return (new TwoFactorCodeMail($this->getTwoFactorCode($notifiable)))
-            ->to($notifiable->email);
+            ->to($notifiable->email)->view(config('filament-2fa.email_view','filament-2fa::emails.two-factor-code') ?? 'filament-2fa::emails.two-factor-code');
     }
 
     /**

@@ -1,5 +1,4 @@
 <?php
-
 namespace AuroraWebSoftware\TwoFactorAuth\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -27,17 +26,7 @@ class TwoFactorCodeMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: __('Your security code for :app', ['app' => config('filament-2fa.email_app_name', config('app.name', 'Hadi Öde'))]),
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     */
-    public function content(): Content
-    {
-        return new Content(
-            markdown: 'filament-2fa::emails.two-factor-code',
+            subject: __('Your security code for :app', ['app' => config('app.name')]),
         );
     }
 

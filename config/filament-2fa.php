@@ -28,7 +28,7 @@ return [
         // TwoFactorType::phone,
     ],
 
-    'email_view' => 'emails.two-factor-code',
+    'email_view' => null,
     'email_app_name' => config('app.name', 'Hadi Öde'),
 
     'enabled_features' => [
@@ -40,7 +40,7 @@ return [
         | This value determines whether users may register in the application.
         |
         */
-        'register' => true,
+        'register' => false,
 
         /*
         |--------------------------------------------------------------------------
